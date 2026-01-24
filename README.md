@@ -1,13 +1,15 @@
-# ARC9 BOCW Special
+# ARC9 BOCW Special DLC
 
-The BOCW M79 on [ARC9](https://github.com/HaodongMo/ARC-9) base.
+Post-launch BOCW Specials on [ARC9](https://github.com/HaodongMo/ARC-9) base.
 
 ## You need to have [Shared Content](https://github.com/multinettt/ARC-9_BOCW_Shared_Content) in order to avoid missing textures, materials and sounds.
 
 ## Weapons List:
-### Special:
+### Special DLC:
 
-- M79
+- R1 Shadowhunter
+- Ballistic Knife
+- Nail Gun
 
 ## Personalization:
 
