@@ -73,7 +73,7 @@ sound.Add({ -- BLACK OPS COLD WAR
     channel = CHAN_AUTO,
     volume = 1.0,
     level = 75,
-    sound = "weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_fire.wav"
+    sound = {"weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_fire1.wav","weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_fire2.wav","weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_fire3.wav","weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_fire4.wav"}
 })
 --[[
 oooooooooo.            oooo  oooo   o8o               .    o8o               oooo    oooo              o8o   .o88o.           

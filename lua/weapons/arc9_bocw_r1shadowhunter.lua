@@ -8,7 +8,7 @@
 
 --   BASE  : ARC9
 --   BUILD : v2026.1
---   SR.NO : 
+--   SR.NO : 91350200
 
 
 ooooooooo.     .o      .oooooo..o oooo                        .o8                             oooo                                    .                      
@@ -51,16 +51,12 @@ SWEP.Description = [[Launches lethal bolt projectiles to silently eliminate enem
 
 The Crossbow is a special weapon that is featured in Call of Duty: Modern Warfare: Mobilized, Call of Duty: Black Ops, Call of Duty: Black Ops (Nintendo DS), Call of Duty: Black Ops II, Call of Duty: Black Ops: Declassified, Call of Duty Online, Call of Duty: Advanced Warfare, Call of Duty: WWII, Call of Duty: Modern Warfare, Call of Duty: Black Ops Cold War, Call of Duty: Mobile, Call of Duty: Modern Warfare II, Call of Duty: Modern Warfare III and Call of Duty: Black Ops 7. It is a silent (but sometimes unsuppressed) high-powered weapon, and takes up the Secondary slot under the category of Special in most of those games. It uses explosive and regular bolts for ammunition which are affected by gravity over range.
 
-The Crossbow returns in Call of Duty: Black Ops Cold War as the R1 Shadowhunter. It was added on March 24th, 2021 as part of the Season Two update.
-
-A unique weapon among others, the R1 Shadowhunter allows players to retrieve discarded bolts that have been fired, whether they hit their intended target or not. Additionally, firing the R1 Shadowhunter will not reveal the player's position on enemy minimaps. But the trophy system blocks its arrows, even they are just normal arrows.
-
-When it comes to power, the R1 is very powerful. Without any multiplier, 1 arrow is enough to kill an enemy at any range. For handling, the R1 has the shortest aim down sights time so far, at only 217ms. Although the R1 has 5 attachment slots like guns, all of its attachments are optical sights, then only 1 attachment can be chosen.]]
+The Crossbow returns in Call of Duty: Black Ops Cold War as the R1 Shadowhunter. It was added on March 24th, 2021 as part of the Season Two update. A unique weapon among others, the R1 Shadowhunter allows players to retrieve discarded bolts that have been fired, whether they hit their intended target or not. Additionally, firing the R1 Shadowhunter will not reveal the player's position on enemy minimaps. But the trophy system blocks its arrows, even they are just normal arrows. When it comes to power, the R1 is very powerful. Without any multiplier, 1 arrow is enough to kill an enemy at any range. For handling, the R1 has the shortest aim down sights time so far, at only 217ms. Although the R1 has 5 attachment slots like guns, all of its attachments are optical sights, then only 1 attachment can be chosen.]]
 
 SWEP.UseHands = true
 
-SWEP.ViewModel = "models/weapons/arc9/c_arc9_m79_bocw.mdl"
-SWEP.WorldModel = "models/weapons/arc9/c_arc9_m79_bocw.mdl"
+SWEP.ViewModel = "models/weapons/arc9/c_arc9_r1shadowhunter_bocw.mdl"
+SWEP.WorldModel = "models/weapons/arc9/c_arc9_r1shadowhunter_bocw.mdl"
 
 SWEP.Slot = 4
 
@@ -161,7 +157,7 @@ SWEP.CanFireUnderwater = false -- This weapon can shoot while underwater.
 SWEP.ShouldDropMag = false
 SWEP.ShouldDropMagEmpty = false
 
-SWEP.DropMagazineModel = "models/weapons/arc9/atts/bocw_m79_magazine.mdl" -- Set to a string or table to drop this magazine when reloading.
+SWEP.DropMagazineModel = "models/weapons/arc9/atts/bocw_r1shadowhunter_magazine.mdl" -- Set to a string or table to drop this magazine when reloading.
 SWEP.DropMagazineSounds = {} -- Table of sounds a dropped magazine should play.
 SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
 SWEP.DropMagazineSkin = 0 -- Model skin of mag.
@@ -402,7 +398,7 @@ SWEP.CustomBlendFactor = nil
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(0, -6, 0),
+    Pos = Vector(0, -0.75, 0),
     Ang = Angle(0, 0, 0),
     Magnification = 1.4,
     Blur = true,
@@ -436,9 +432,9 @@ SWEP.SightMidPoint = {
 }
 
 -- Position for customizing
-SWEP.CustomizeAng = Angle(90, 0, -16)
-SWEP.CustomizePos = Vector(5, 35, 7)
-SWEP.CustomizeRotateAnchor = Vector(8, 0, -7)
+SWEP.CustomizeAng = Angle(90, 0, 0)
+SWEP.CustomizePos = Vector(7, 38, 3)
+SWEP.CustomizeRotateAnchor = Vector(7, 0, -7)
 
 SWEP.CustomizeSnapshotFOV = 70
 SWEP.CustomizeSnapshotPos = Vector(9, 5, -3)
@@ -499,13 +495,13 @@ SWEP.Attachments = {
     {
         PrintName = "STICKER 1",
         Category = "stickers",
-        StickerModel = "models/weapons/arc9/stickers/bocw_m79_sticker1.mdl",
+        StickerModel = "models/weapons/arc9/stickers/bocw_r1shadowhunter_sticker1.mdl",
         CosmeticOnly = true,
     },
     {
         PrintName = "STICKER 2",
         Category = "stickers",
-        StickerModel = "models/weapons/arc9/stickers/bocw_m79_sticker2.mdl",
+        StickerModel = "models/weapons/arc9/stickers/bocw_r1shadowhunter_sticker2.mdl",
         CosmeticOnly = true,
     },
 }
@@ -518,7 +514,7 @@ local CustomSlotTable = {
     Pos = Vector(0, 0, 0),
     Ang = Angle(0, 0, 0),
     Icon_Offset = Vector(-4, 0, -0.5),
-    Category = {"bocw_custom_slot", "bocw_custom_slot_m79"},
+    Category = {"bocw_custom_slot", "bocw_custom_slot_r1shadowhunter"},
 }
 
 if CustomSlotCvar:GetBool() then
