@@ -36,11 +36,11 @@ SWEP.PrintName = "R1 Shadowhunter"
 SWEP.TrueName = "R1 Shadowhunter"
 SWEP.Class = "Special"
 SWEP.Trivia = {
-    Manufacturer = "Springfield Armory",
-    Calibre = "40x46mm Grenade",
-    Mechanism = "Break-action",
-    Country = "USA",
-    Year = 1961
+    Manufacturer = "Unknown",
+    Calibre = "Arrow",
+    Mechanism = "Elasticity",
+    Country = "Unknown",
+    Year = "Unknown"
 }
 
 SWEP.Credits = {
@@ -122,13 +122,13 @@ SWEP.PhysBulletDontInheritPlayerVelocity = false -- Set to true to disable "Brow
 
 -------------------------- ENTITY LAUNCHING
 
-SWEP.ShootEnt = "arc9_bocw_m79_projectile" -- Set to an entity to launch it out of this weapon.
+SWEP.ShootEnt = "arc9_bocw_r1shadowhunter_projectile" -- Set to an entity to launch it out of this weapon.
 SWEP.ShootEntForce = 10000
 SWEP.ShootEntInheritPlayerVelocity = true -- Set to true to inherit velocity
 
 -------------------------- TRACERS
 
-SWEP.TracerNum = 1 -- Tracer every X
+SWEP.TracerNum = 0 -- Tracer every X
 SWEP.TracerFinalMag = 0 -- The last X bullets in a magazine are all tracers
 SWEP.TracerEffect = "ARC9_tracer" -- The effect to use for hitscan tracers
 SWEP.TracerColor = Color(255, 200, 200)
@@ -136,7 +136,7 @@ SWEP.TracerSize = 0.5
 
 -------------------------- MAGAZINE
 
-SWEP.Ammo = "SMG1_Grenade" -- What ammo type this gun uses.
+SWEP.Ammo = "xbowbolt" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 0 -- The amount of rounds this gun can chamber.
 SWEP.ClipSize = 1 -- Self-explanatory.
@@ -150,7 +150,7 @@ SWEP.InfiniteAmmo = false -- Weapon does not take from reserve ammo
 SWEP.BottomlessClip = false -- Weapon never has to reload
 
 SWEP.ReloadWhileSprint = true -- This weapon can reload while the user is sprinting.
-SWEP.ReloadInSights = false -- This weapon can aim down sights while reloading.
+SWEP.ReloadInSights = true -- This weapon can aim down sights while reloading.
 
 SWEP.CanFireUnderwater = false -- This weapon can shoot while underwater.
 
@@ -188,7 +188,7 @@ SWEP.Firemodes = {
 
 -------------------------- RECOIL
 
-SWEP.Recoil = 3
+SWEP.Recoil = 0.1
 SWEP.RecoilSide = 0.5
 SWEP.RecoilUp = 1
 
@@ -242,7 +242,7 @@ SWEP.RestoreBreathTime = 4
 
 SWEP.FreeAimRadiusSights = 0
 
-SWEP.AimDownSightsTime = 0.350 -- How long it takes to go from hip fire to aiming down sights.
+SWEP.AimDownSightsTime = 0.217 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.4 -- How long it takes to go from sprinting to being able to fire.
 
 SWEP.ShootWhileSprint = false
@@ -330,12 +330,14 @@ SWEP.BreathRunOutSound = "arc9/breath_runout.wav"
 
 -------------------------- EFFECTS
 
+SWEP.NoMuzzleEffect = true
+
 SWEP.MuzzleParticle = "muzzleflash_1" -- Used for some muzzle effects.
 --SWEP.MuzzleEffect = "MuzzleFlash"
 
 SWEP.ShellModel = "models/shells/shell_556.mdl"
 
-SWEP.ShellSmoke = true
+SWEP.ShellSmoke = false
 SWEP.NoShellEject = true
 
 SWEP.ShellScale = 1.2
@@ -434,11 +436,11 @@ SWEP.SightMidPoint = {
 -- Position for customizing
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(7, 38, 3)
-SWEP.CustomizeRotateAnchor = Vector(7, 0, -7)
+SWEP.CustomizeRotateAnchor = Vector(7, 0, -4)
 
 SWEP.CustomizeSnapshotFOV = 70
 SWEP.CustomizeSnapshotPos = Vector(9, 5, -3)
-SWEP.CustomizeSnapshotAng = Angle(0, 0, 13)
+SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
 SWEP.BipodPos = Vector(0, 4, -4)
@@ -469,6 +471,11 @@ SWEP.AnimMelee = ACT_GMOD_GESTURE_MELEE_SHOVE_2HAND
 SWEP.DefaultElements = {}
 
 SWEP.AttachmentElements = {
+    ["optic_mount"] = {
+        Bodygroups = {
+            {1, 1},
+        }
+    },
 }
 
 -- Use to override attachment table entry data.
@@ -486,6 +493,15 @@ SWEP.AttachmentTableOverrides = {
 SWEP.DuplicateAttachments = true
 
 SWEP.Attachments = {
+    {
+        PrintName = "OPTIC",
+        Bone = "tag_weapon",
+        Pos = Vector(5, 0, 4.39),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        Category = {"optic_picatinny"},
+        InstalledElements = {"optic_mount"},
+    },
     {
         PrintName = "CAMO",
         DefaultIcon = Material("arc9/def_att_icons/skin.png"),
@@ -523,7 +539,6 @@ end
 --=========================================================
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
-    
     local elements = swep:GetElements()
 end
 
@@ -552,7 +567,9 @@ SWEP.Animations = {
     ["ready"] = {
         Source = {"ready"},
         EventTable = {
-            { s = "ARC9_BOCW.R1Shadowhunter_ready", t = 0 },
+            { s = "ARC9_BOCW.R1Shadowhunter_ready_start", t = 0 },
+            { s = "ARC9_BOCW.R1Shadowhunter_ready_load", t = 0.4 },
+            { s = "ARC9_BOCW.R1Shadowhunter_ready_end", t = 0.8 },
         },
     },
     ["bash"] = {
@@ -563,15 +580,28 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload",
-        Time = 3.03,
+        Time = 2.58,
         NoMagSwap = true,
         MinProgress = 0.65,
         EventTable = {
-            { s = "ARC9_BOCW.R1Shadowhunter_reload_open", t = 0 },
-            { s = "ARC9_BOCW.R1Shadowhunter_reload_casing", t = 0.4 },
-            { s = "ARC9_BOCW.R1Shadowhunter_reload_load", t = 1.1 },
-            { s = "ARC9_BOCW.R1Shadowhunter_reload_close", t = 1.7 },
-            { s = "ARC9_BOCW.R1Shadowhunter_reload_end", t = 2.4 },
+            { s = "ARC9_BOCW.R1Shadowhunter_reload_start", t = 0 },
+            { s = "ARC9_BOCW.R1Shadowhunter_reload_pullstring", t = 0.4 },
+            { s = "ARC9_BOCW.R1Shadowhunter_reload_loadstart", t = 1.1 },
+            { s = "ARC9_BOCW.R1Shadowhunter_reload_load", t = 1.5 },
+            { s = "ARC9_BOCW.R1Shadowhunter_reload_end", t = 1.9 },
+        },
+    },
+    ["reload_empty"] = {
+        Source = "reload_empty",
+        Time = 2.58,
+        NoMagSwap = true,
+        MinProgress = 0.65,
+        EventTable = {
+            { s = "ARC9_BOCW.R1Shadowhunter_reload_start", t = 0 },
+            { s = "ARC9_BOCW.R1Shadowhunter_reload_pullstring", t = 0.4 },
+            { s = "ARC9_BOCW.R1Shadowhunter_reload_loadstart", t = 1.1 },
+            { s = "ARC9_BOCW.R1Shadowhunter_reload_load", t = 1.5 },
+            { s = "ARC9_BOCW.R1Shadowhunter_reload_end", t = 1.9 },
         },
     },
     ["enter_sprint"] = {
@@ -592,7 +622,9 @@ SWEP.Animations = {
     ["enter_inspect"] = {
         Source = "inspect",
         EventTable = {
-            { s = "ARC9_BOCW.R1Shadowhunter_inspect", t = 0 },
+            { s = "ARC9_BOCW.R1Shadowhunter_inspect_part1", t = 0 },
+            { s = "ARC9_BOCW.R1Shadowhunter_inspect_part2", t = 2.2 },
+            { s = "ARC9_BOCW.R1Shadowhunter_inspect_part3", t = 4.9 },
         },
     },
 }

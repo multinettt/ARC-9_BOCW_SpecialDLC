@@ -14,45 +14,59 @@ o888o  o888o o888o    8""88888P'  o888o o888o `Y888""8o `Y8bod88P" `Y8bod8P'    
 -- READY FOLEY
 
 sound.Add({
-    name = "ARC9_BOCW.R1Shadowhunter_ready",
-    channel = CHAN_ITEM,
+    name = "ARC9_BOCW.R1Shadowhunter_ready_start",
+    channel = CHAN_AUTO,
     volume = 1.0,
-    sound = "weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_ready.wav"
+    sound = "weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_ready_start.wav"
+})
+
+sound.Add({
+    name = "ARC9_BOCW.R1Shadowhunter_ready_load",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_ready_load.wav"
+})
+
+sound.Add({
+    name = "ARC9_BOCW.R1Shadowhunter_ready_end",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_ready_end.wav"
 })
 
 -- RELOAD
 
 sound.Add({
-    name = "ARC9_BOCW.R1Shadowhunter_reload_open",
+    name = "ARC9_BOCW.R1Shadowhunter_reload_start",
     channel = CHAN_AUTO,
     volume = 1.0,
-    sound = {"weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_reload_open1.wav","weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_reload_open2.wav","weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_reload_open3.wav"}
+    sound = "weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_reload_start.wav"
 })
 
 sound.Add({
-    name = "ARC9_BOCW.R1Shadowhunter_reload_casing",
+    name = "ARC9_BOCW.R1Shadowhunter_reload_pullstring",
     channel = CHAN_AUTO,
     volume = 1.0,
-    sound = {"weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_reload_casing1.wav","weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_reload_casing2.wav","weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_reload_casing3.wav"}
+    sound = "weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_reload_pullstring.wav"
+})
+
+sound.Add({
+    name = "ARC9_BOCW.R1Shadowhunter_reload_loadstart",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_reload_loadstart.wav"
 })
 
 sound.Add({
     name = "ARC9_BOCW.R1Shadowhunter_reload_load",
     channel = CHAN_AUTO,
     volume = 1.0,
-    sound = {"weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_reload_load1.wav","weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_reload_load2.wav","weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_reload_load3.wav"}
-})
-
-sound.Add({
-    name = "ARC9_BOCW.R1Shadowhunter_reload_close",
-    channel = CHAN_AUTO,
-    volume = 1.0,
-    sound = {"weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_reload_close1.wav","weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_reload_close2.wav","weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_reload_close3.wav"}
+    sound = "weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_reload_load.wav"
 })
 
 sound.Add({
     name = "ARC9_BOCW.R1Shadowhunter_reload_end",
-    channel = CHAN_ITEM,
+    channel = CHAN_AUTO,
     volume = 0.5,
     sound = "weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_reload_end.wav"
 })
@@ -60,10 +74,40 @@ sound.Add({
 -- INSPECT FOLEY
 
 sound.Add({
-    name = "ARC9_BOCW.R1Shadowhunter_inspect",
+    name = "ARC9_BOCW.R1Shadowhunter_inspect_part1",
     channel = CHAN_ITEM,
     volume = 1.0,
-    sound = "weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_inspect.wav"
+    sound = "weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_inspect_part1.wav"
+})
+
+sound.Add({
+    name = "ARC9_BOCW.R1Shadowhunter_inspect_part2",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_inspect_part2.wav"
+})
+
+sound.Add({
+    name = "ARC9_BOCW.R1Shadowhunter_inspect_part3",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_inspect_part3.wav"
+})
+
+-- PULLOUT PUTAWAY
+
+sound.Add({
+    name = "ARC9_BOCW.R1Shadowhunter_draw",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_draw.wav"
+})
+
+sound.Add({
+    name = "ARC9_BOCW.R1Shadowhunter_holster",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_holster.wav"
 })
 
 -----------------------------------------------
@@ -72,8 +116,21 @@ sound.Add({ -- BLACK OPS COLD WAR
     name = "ARC9_BOCW.R1Shadowhunter_fire",
     channel = CHAN_AUTO,
     volume = 1.0,
-    level = 75,
     sound = {"weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_fire1.wav","weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_fire2.wav","weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_fire3.wav","weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_fire4.wav"}
+})
+
+sound.Add({
+    name = "ARC9_BOCW.R1Shadowhunter_projectile_hitworld",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_projectile_hitworld.wav"
+})
+
+sound.Add({
+    name = "ARC9_BOCW.R1Shadowhunter_projectile_hit",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = {"weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_projectile_hit1.wav","weapons/arc9/bocw_r1shadowhunter/r1shadowhunter_projectile_hit2.wav"}
 })
 --[[
 oooooooooo.            oooo  oooo   o8o               .    o8o               oooo    oooo              o8o   .o88o.           
