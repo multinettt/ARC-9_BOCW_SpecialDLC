@@ -141,7 +141,108 @@ oooooooooo.            oooo  oooo   o8o               .    o8o               ooo
  888    .88P d8(  888   888   888   888  o.  )88b   888 .  888  888   .o8     888  `88b.   888   888   888   888    888    .o 
 o888bood8P'  `Y888""8o o888o o888o o888o 8""888P'   "888" o888o `Y8bod8P'    o888o  o888o o888o o888o o888o o888o   `Y8bod8P' 
 ]]
+-- READY FOLEY
 
+sound.Add({
+    name = "ARC9_BOCW.BallisticKnife_ready",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_ballisticknife/ballisticknife_ready.wav"
+})
+
+-- RELOAD
+
+sound.Add({
+    name = "ARC9_BOCW.BallisticKnife_reload",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_ballisticknife/ballisticknife_reload.wav"
+})
+
+-- INSPECT FOLEY
+
+sound.Add({
+    name = "ARC9_BOCW.BallisticKnife_inspect_part1",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_ballisticknife/ballisticknife_inspect_part1.wav"
+})
+sound.Add({
+    name = "ARC9_BOCW.BallisticKnife_inspect_part2",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_ballisticknife/ballisticknife_inspect_part2.wav"
+})
+sound.Add({
+    name = "ARC9_BOCW.BallisticKnife_inspect_part3",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_ballisticknife/ballisticknife_inspect_part3.wav"
+})
+sound.Add({
+    name = "ARC9_BOCW.BallisticKnife_inspect_part4",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_ballisticknife/ballisticknife_inspect_part4.wav"
+})
+sound.Add({
+    name = "ARC9_BOCW.BallisticKnife_inspect_part5",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_ballisticknife/ballisticknife_inspect_part5.wav"
+})
+sound.Add({
+    name = "ARC9_BOCW.BallisticKnife_inspect_part6",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_ballisticknife/ballisticknife_inspect_part6.wav"
+})
+sound.Add({
+    name = "ARC9_BOCW.BallisticKnife_inspect_part7",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_ballisticknife/ballisticknife_inspect_part7.wav"
+})
+sound.Add({
+    name = "ARC9_BOCW.BallisticKnife_inspect_part8",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_ballisticknife/ballisticknife_inspect_part8.wav"
+})
+-----------------------------------------------
+-- FIRING SOUNDS
+sound.Add({ -- BLACK OPS COLD WAR
+    name = "ARC9_BOCW.BallisticKnife_fire",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = {"weapons/arc9/bocw_ballisticknife/ballisticknife_fire1.wav",
+    "weapons/arc9/bocw_ballisticknife/ballisticknife_fire2.wav",
+    "weapons/arc9/bocw_ballisticknife/ballisticknife_fire3.wav",
+    "weapons/arc9/bocw_ballisticknife/ballisticknife_fire4.wav",
+    "weapons/arc9/bocw_ballisticknife/ballisticknife_fire5.wav",
+    "weapons/arc9/bocw_ballisticknife/ballisticknife_fire6.wav",
+    "weapons/arc9/bocw_ballisticknife/ballisticknife_fire7.wav",
+    "weapons/arc9/bocw_ballisticknife/ballisticknife_fire8.wav",
+    "weapons/arc9/bocw_ballisticknife/ballisticknife_fire9.wav",
+    "weapons/arc9/bocw_ballisticknife/ballisticknife_fire10.wav",
+    "weapons/arc9/bocw_ballisticknife/ballisticknife_fire11.wav",
+    "weapons/arc9/bocw_ballisticknife/ballisticknife_fire12.wav",
+    "weapons/arc9/bocw_ballisticknife/ballisticknife_fire13.wav"}
+})
+
+sound.Add({
+    name = "ARC9_BOCW.BallisticKnife_projectile_hitworld",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_ballisticknife/ballisticknife_projectile_hitworld.wav"
+})
+
+sound.Add({
+    name = "ARC9_BOCW.BallisticKnife_projectile_hit",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = {"weapons/arc9/bocw_ballisticknife/ballisticknife_projectile_hit1.wav","weapons/arc9/bocw_ballisticknife/ballisticknife_projectile_hit2.wav"}
+})
 --[[
 ooooo      ooo            o8o  oooo       .oooooo.                            
 `888b.     `8'            `"'  `888      d8P'  `Y8b                           
