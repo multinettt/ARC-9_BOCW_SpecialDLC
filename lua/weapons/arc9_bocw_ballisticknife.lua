@@ -1,13 +1,13 @@
 --=============================================================================
 --   ARC9 CALL OF DUTY: BLACK OPS COLD WAR
---   SPECIAL
+--   SPECIAL DLC
 --   BALLISTIC KNIFE
 --=============================================================================
 --[[
 --   SWEP INFORMATION:
 
 --   BASE  : ARC9
---   BUILD : v2026.1
+--   BUILD : v2026.2
 --   SR.NO : 
 
 
@@ -212,7 +212,7 @@ SWEP.Spread = math.rad(1.3 / 37.5)
 SWEP.SpreadMultRecoil = 1.2
 
 SWEP.SpreadMultSights = 0.1
-SWEP.SpreadAddHipFire = math.rad(10 / 37.5)
+SWEP.SpreadAddHipFire = math.rad(20 / 37.5)
 SWEP.SpreadAddMove = math.rad(100 / 37.5)
 SWEP.SpreadAddMidAir = 0.1
 -- SWEP.SpreadAddShooting = math.rad(5 / 37.5) -- math.rad(108 / 37.5)
@@ -276,6 +276,7 @@ SWEP.SpeedMultCrouch = 1
 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
+SWEP.SecondaryBash = true
 
 SWEP.BashDamage = 50
 SWEP.BashLungeRange = 64

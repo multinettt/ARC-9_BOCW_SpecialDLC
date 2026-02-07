@@ -252,3 +252,122 @@ ooooo      ooo            o8o  oooo       .oooooo.
  8       `888  d8(  888   888   888     `88.    .88'   888   888   888   888  
 o8o        `8  `Y888""8o o888o o888o     `Y8bood8P'    `V88V"V8P' o888o o888o 
 ]]
+-- READY FOLEY
+
+sound.Add({
+    name = "ARC9_BOCW.NailGun_ready",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_nailgun/nailgun_ready.wav"
+})
+
+-- RELOAD
+
+sound.Add({
+    name = "ARC9_BOCW.NailGun_reload_start",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_nailgun/nailgun_reload_start.wav"
+})
+
+sound.Add({
+    name = "ARC9_BOCW.NailGun_reload_magout",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_nailgun/nailgun_reload_magout.wav"
+})
+
+sound.Add({
+    name = "ARC9_BOCW.NailGun_reload_maginstart",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_nailgun/nailgun_reload_maginstart.wav"
+})
+
+sound.Add({
+    name = "ARC9_BOCW.NailGun_reload_magin",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_nailgun/nailgun_reload_magin.wav"
+})
+
+sound.Add({
+    name = "ARC9_BOCW.NailGun_reload_end",
+    channel = CHAN_AUTO,
+    volume = 0.5,
+    sound = "weapons/arc9/bocw_nailgun/nailgun_reload_end.wav"
+})
+
+-- INSPECT FOLEY
+
+sound.Add({
+    name = "ARC9_BOCW.NailGun_inspect_part1",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_nailgun/nailgun_inspect_part1.wav"
+})
+
+sound.Add({
+    name = "ARC9_BOCW.NailGun_inspect_part2",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_nailgun/nailgun_inspect_part2.wav"
+})
+
+sound.Add({
+    name = "ARC9_BOCW.NailGun_inspect_part3",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_nailgun/nailgun_inspect_part3.wav"
+})
+
+-- PULLOUT PUTAWAY
+
+sound.Add({
+    name = "ARC9_BOCW.NailGun_draw",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_nailgun/nailgun_draw.wav"
+})
+sound.Add({
+    name = "ARC9_BOCW.NailGun_draw_quick",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_nailgun/nailgun_draw_quick.wav"
+})
+
+sound.Add({
+    name = "ARC9_BOCW.NailGun_holster",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_nailgun/nailgun_holster.wav"
+})
+sound.Add({
+    name = "ARC9_BOCW.NailGun_holster_quick",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_nailgun/nailgun_holster_quick.wav"
+})
+
+-----------------------------------------------
+-- FIRING SOUNDS
+sound.Add({ -- BLACK OPS COLD WAR
+    name = "ARC9_BOCW.NailGun_fire",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_nailgun/nailgun_fire.wav"
+})
+
+sound.Add({
+    name = "ARC9_BOCW.NailGun_projectile_hitworld",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = "weapons/arc9/bocw_nailgun/nailgun_projectile_hitworld.wav"
+})
+
+sound.Add({
+    name = "ARC9_BOCW.NailGun_projectile_hit",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = {"weapons/arc9/bocw_nailgun/nailgun_projectile_hit1.wav","weapons/arc9/bocw_nailgun/nailgun_projectile_hit2.wav"}
+})

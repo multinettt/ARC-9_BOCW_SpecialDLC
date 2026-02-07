@@ -1,23 +1,23 @@
 --=============================================================================
 --   ARC9 CALL OF DUTY: BLACK OPS COLD WAR
 --   SPECIAL DLC
---   R1 SHADOWHUNTER
+--   NAIL GUN
 --=============================================================================
 --[[
 --   SWEP INFORMATION:
 
 --   BASE  : ARC9
 --   BUILD : v2026.2
---   SR.NO : 91350200
+--   SR.NO : 
 
 
-ooooooooo.     .o      .oooooo..o oooo                        .o8                             oooo                                    .                      
-`888   `Y88. o888     d8P'    `Y8 `888                       "888                             `888                                  .o8                      
- 888   .d88'  888     Y88bo.       888 .oo.    .oooo.    .oooo888   .ooooo.  oooo oooo    ooo  888 .oo.   oooo  oooo  ooo. .oo.   .o888oo  .ooooo.  oooo d8b 
- 888ooo88P'   888      `"Y8888o.   888P"Y88b  `P  )88b  d88' `888  d88' `88b  `88. `88.  .8'   888P"Y88b  `888  `888  `888P"Y88b    888   d88' `88b `888""8P 
- 888`88b.     888          `"Y88b  888   888   .oP"888  888   888  888   888   `88..]88..8'    888   888   888   888   888   888    888   888ooo888  888     
- 888  `88b.   888     oo     .d8P  888   888  d8(  888  888   888  888   888    `888'`888'     888   888   888   888   888   888    888 . 888    .o  888     
-o888o  o888o o888o    8""88888P'  o888o o888o `Y888""8o `Y8bod88P" `Y8bod8P'     `8'  `8'     o888o o888o  `V88V"V8P' o888o o888o   "888" `Y8bod8P' d888b    
+ooooo      ooo            o8o  oooo       .oooooo.                            
+`888b.     `8'            `"'  `888      d8P'  `Y8b                           
+ 8 `88b.    8   .oooo.   oooo   888     888           oooo  oooo  ooo. .oo.   
+ 8   `88b.  8  `P  )88b  `888   888     888           `888  `888  `888P"Y88b  
+ 8     `88b.8   .oP"888   888   888     888     ooooo  888   888   888   888  
+ 8       `888  d8(  888   888   888     `88.    .88'   888   888   888   888  
+o8o        `8  `Y888""8o o888o o888o     `Y8bood8P'    `V88V"V8P' o888o o888o 
 
 
 ]]
@@ -32,31 +32,31 @@ SWEP.Category = "ARC9 - Black Ops Cold War"
 SWEP.SubCategory = "Special"
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "R1 Shadowhunter"
-SWEP.TrueName = "R1 Shadowhunter"
+SWEP.PrintName = "Nail Gun"
+SWEP.TrueName = "Nail Gun"
 SWEP.Class = "Special"
 SWEP.Trivia = {
-    Manufacturer = "Unknown",
-    Calibre = "Arrow",
-    Mechanism = "Elasticity",
-    Country = "Unknown",
-    Year = "Unknown"
+    Manufacturer = "T9 Tools",
+    Calibre = "Nail",
+    Mechanism = "Unknown",
+    Country = "USA",
+    Year = 1987
 }
 
 SWEP.Credits = {
     Author = "multinett",
 }
 
-SWEP.Description = [[Launches lethal bolt projectiles to silently eliminate enemies. Excellent hip fire accuracy with good handling. Bolts must be manually loaded.
+SWEP.Description = [[Full-auto nail gun. Slow firing power tool uses compressed air to launch fast moving projectiles. High damage at close range with fast handling speeds.
 
-The Crossbow is a special weapon that is featured in Call of Duty: Modern Warfare: Mobilized, Call of Duty: Black Ops, Call of Duty: Black Ops (Nintendo DS), Call of Duty: Black Ops II, Call of Duty: Black Ops: Declassified, Call of Duty Online, Call of Duty: Advanced Warfare, Call of Duty: WWII, Call of Duty: Modern Warfare, Call of Duty: Black Ops Cold War, Call of Duty: Mobile, Call of Duty: Modern Warfare II, Call of Duty: Modern Warfare III and Call of Duty: Black Ops 7. It is a silent (but sometimes unsuppressed) high-powered weapon, and takes up the Secondary slot under the category of Special in most of those games. It uses explosive and regular bolts for ammunition which are affected by gravity over range.
+The Nail Gun is a special weapon featured in Call of Duty: Black Ops Cold War, Call of Duty: Mobile, and Call of Duty: Black Ops 6.
 
-The Crossbow returns in Call of Duty: Black Ops Cold War as the R1 Shadowhunter. It was added on March 24th, 2021 as part of the Season Two update. A unique weapon among others, the R1 Shadowhunter allows players to retrieve discarded bolts that have been fired, whether they hit their intended target or not. Additionally, firing the R1 Shadowhunter will not reveal the player's position on enemy minimaps. But the trophy system blocks its arrows, even they are just normal arrows. When it comes to power, the R1 is very powerful. Without any multiplier, 1 arrow is enough to kill an enemy at any range. For handling, the R1 has the shortest aim down sights time so far, at only 217ms. Although the R1 has 5 attachment slots like guns, all of its attachments are optical sights, then only 1 attachment can be chosen.]]
+The Nail Gun was added to Call of Duty: Black Ops Cold War as part of the Season Four update. It is classified as a Special in Black Ops Cold War, and as a Submachine Gun within Call of Duty: Warzone.]]
 
 SWEP.UseHands = true
 
-SWEP.ViewModel = "models/weapons/arc9/c_arc9_r1shadowhunter_bocw.mdl"
-SWEP.WorldModel = "models/weapons/arc9/c_arc9_r1shadowhunter_bocw.mdl"
+SWEP.ViewModel = "models/weapons/arc9/c_arc9_nailgun_bocw.mdl"
+SWEP.WorldModel = "models/weapons/arc9/c_arc9_nailgun_bocw.mdl"
 
 SWEP.Slot = 4
 
@@ -77,13 +77,13 @@ SWEP.ViewModelFOVBase = 70
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 68 -- Damage done at point blank range
-SWEP.DamageMin = 49 -- Damage done at maximum range
+SWEP.DamageMax = 50 -- Damage done at point blank range
+SWEP.DamageMin = 50 -- Damage done at maximum range
 
 SWEP.DamageRand = 1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 50.8 * 39.37 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 400 * 39.37 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 8 * 39.37 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 15 * 39.37 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 SWEP.Distance = 1200 * 39.37 -- In Hammer units, how far bullets can travel, period.
 
 SWEP.Num = 1 -- Number of bullets to shoot
@@ -122,7 +122,7 @@ SWEP.PhysBulletDontInheritPlayerVelocity = false -- Set to true to disable "Brow
 
 -------------------------- ENTITY LAUNCHING
 
-SWEP.ShootEnt = "arc9_bocw_r1shadowhunter_projectile" -- Set to an entity to launch it out of this weapon.
+SWEP.ShootEnt = "arc9_bocw_nailgun_projectile" -- Set to an entity to launch it out of this weapon.
 SWEP.ShootEntForce = 10000
 SWEP.ShootEntInheritPlayerVelocity = true -- Set to true to inherit velocity
 
@@ -136,10 +136,10 @@ SWEP.TracerSize = 0.5
 
 -------------------------- MAGAZINE
 
-SWEP.Ammo = "xbowbolt" -- What ammo type this gun uses.
+SWEP.Ammo = "pistol" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 0 -- The amount of rounds this gun can chamber.
-SWEP.ClipSize = 1 -- Self-explanatory.
+SWEP.ClipSize = 15 -- Self-explanatory.
 SWEP.SupplyLimit = 3 -- Amount of magazines of ammo this gun can take from an ARC-9 supply crate.
 SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
 
@@ -157,7 +157,7 @@ SWEP.CanFireUnderwater = false -- This weapon can shoot while underwater.
 SWEP.ShouldDropMag = false
 SWEP.ShouldDropMagEmpty = false
 
-SWEP.DropMagazineModel = "models/weapons/arc9/atts/bocw_r1shadowhunter_magazine.mdl" -- Set to a string or table to drop this magazine when reloading.
+SWEP.DropMagazineModel = "models/weapons/arc9/atts/bocw_nailgun_magazine.mdl" -- Set to a string or table to drop this magazine when reloading.
 SWEP.DropMagazineSounds = {} -- Table of sounds a dropped magazine should play.
 SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
 SWEP.DropMagazineSkin = 0 -- Model skin of mag.
@@ -169,7 +169,7 @@ SWEP.DropMagazineVelocity = Vector(-200, -200, 0) -- Put something here if your 
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 400
+SWEP.RPM = 508
 
 -- Works different to ArcCW
 
@@ -182,7 +182,7 @@ SWEP.RPM = 400
 
 SWEP.Firemodes = {
     {
-        Mode = 1,
+        Mode = -1,
     },
 }
 
@@ -205,7 +205,7 @@ SWEP.Spread = math.rad(1.3 / 37.5)
 SWEP.SpreadMultRecoil = 1.2
 
 SWEP.SpreadMultSights = 0.1
-SWEP.SpreadAddHipFire = math.rad(85 / 37.5)
+SWEP.SpreadAddHipFire = math.rad(70 / 37.5)
 SWEP.SpreadAddMove = math.rad(100 / 37.5)
 SWEP.SpreadAddMidAir = 0.1
 -- SWEP.SpreadAddShooting = math.rad(5 / 37.5) -- math.rad(108 / 37.5)
@@ -290,8 +290,8 @@ SWEP.ShootPitch = 100
 SWEP.ShootPitchVariation = 0.05
 
 SWEP.FirstShootSound = nil                      -- First fire
-SWEP.ShootSound = "ARC9_BOCW.R1Shadowhunter_fire"                            -- Fire
---SWEP.ShootSoundIndoor = "ARC9_BOCW.R1Shadowhunter_fire_int_decay"                  -- Fire indoors
+SWEP.ShootSound = "ARC9_BOCW.NailGun_fire"                            -- Fire
+--SWEP.ShootSoundIndoor = "ARC9_BOCW.NailGun_fire_int_decay"                  -- Fire indoors
 SWEP.ShootSoundSilenced = ""                    -- Fire silenced
 SWEP.ShootSoundIndoorSilenced = nil             -- Fire indoors silenced
 SWEP.FirstShootSoundSilenced = nil              -- First fire silenced
@@ -362,8 +362,24 @@ SWEP.BobSprintMult = 0.1
 -------------------------- VISUALS
 
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
-    "tag_bullet_animate"
+    [1] = {"tag_bullet_deplete_sqtl_00_animate"},
+    [2] = {"tag_bullet_deplete_sqtl_01_animate", "tag_bullet_deplete_swap_01_animate"},
+    [3] = {"tag_bullet_deplete_sqtl_02_animate", "tag_bullet_deplete_swap_02_animate"},
+    [4] = {"tag_bullet_deplete_sqtl_03_animate", "tag_bullet_deplete_swap_03_animate"},
+    [5] = {"tag_bullet_deplete_sqtl_04_animate", "tag_bullet_deplete_swap_04_animate"},
+    [6] = {"tag_bullet_deplete_sqtl_05_animate", "tag_bullet_deplete_swap_05_animate"},
+    [7] = {"tag_bullet_deplete_sqtl_06_animate", "tag_bullet_deplete_swap_06_animate"},
+    [8] = {"tag_bullet_deplete_sqtl_07_animate", "tag_bullet_deplete_swap_07_animate"},
+    [9] = {"tag_bullet_deplete_sqtl_08_animate", "tag_bullet_deplete_swap_08_animate"},
+    [10] = {"tag_bullet_deplete_sqtl_09_animate", "tag_bullet_deplete_swap_09_animate"},
+    [11] = {"tag_bullet_deplete_sqtl_10_animate", "tag_bullet_deplete_swap_10_animate"},
+    [12] = {"tag_bullet_deplete_sqtl_11_animate", "tag_bullet_deplete_swap_11_animate"},
+    [13] = {"tag_bullet_deplete_sqtl_12_animate", "tag_bullet_deplete_swap_12_animate"},
+    [14] = {"tag_bullet_deplete_sqtl_13_animate", "tag_bullet_deplete_swap_13_animate"},
 }
+
+SWEP.BulletBonesSub1 = true
+
 SWEP.CaseBones = {}
 -- Unlike BulletBones, these bones are determined by the missing bullet amount when reloading
 SWEP.StripperClipBones = {}
@@ -400,7 +416,7 @@ SWEP.CustomBlendFactor = nil
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(0, -0.75, 0),
+    Pos = Vector(0, 1, 0),
     Ang = Angle(0, 0, 0),
     Magnification = 1.4,
     Blur = true,
@@ -434,9 +450,9 @@ SWEP.SightMidPoint = {
 }
 
 -- Position for customizing
-SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(7, 38, 3)
-SWEP.CustomizeRotateAnchor = Vector(7, 0, -4)
+SWEP.CustomizeAng = Angle(90, 0, -3)
+SWEP.CustomizePos = Vector(10, 38, 5)
+SWEP.CustomizeRotateAnchor = Vector(10, 0, -6)
 
 SWEP.CustomizeSnapshotFOV = 70
 SWEP.CustomizeSnapshotPos = Vector(9, 5, -3)
@@ -494,15 +510,6 @@ SWEP.DuplicateAttachments = true
 
 SWEP.Attachments = {
     {
-        PrintName = "OPTIC",
-        Bone = "tag_weapon",
-        Pos = Vector(5, 0, 4.39),
-        Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, 0, 0),
-        Category = {"optic_picatinny"},
-        InstalledElements = {"optic_mount"},
-    },
-    {
         PrintName = "CAMO",
         DefaultIcon = Material("arc9/def_att_icons/skin.png"),
         Category = {"universal_camo"},
@@ -511,13 +518,13 @@ SWEP.Attachments = {
     {
         PrintName = "STICKER 1",
         Category = "stickers",
-        StickerModel = "models/weapons/arc9/stickers/bocw_r1shadowhunter_sticker1.mdl",
+        StickerModel = "models/weapons/arc9/stickers/bocw_nailgun_sticker1.mdl",
         CosmeticOnly = true,
     },
     {
         PrintName = "STICKER 2",
         Category = "stickers",
-        StickerModel = "models/weapons/arc9/stickers/bocw_r1shadowhunter_sticker2.mdl",
+        StickerModel = "models/weapons/arc9/stickers/bocw_nailgun_sticker2.mdl",
         CosmeticOnly = true,
     },
 }
@@ -530,7 +537,7 @@ local CustomSlotTable = {
     Pos = Vector(0, 0, 0),
     Ang = Angle(0, 0, 0),
     Icon_Offset = Vector(-4, 0, -0.5),
-    Category = {"bocw_custom_slot", "bocw_custom_slot_r1shadowhunter"},
+    Category = {"bocw_custom_slot", "bocw_custom_slot_nailgun"},
 }
 
 if CustomSlotCvar:GetBool() then
@@ -567,9 +574,7 @@ SWEP.Animations = {
     ["ready"] = {
         Source = {"ready"},
         EventTable = {
-            { s = "ARC9_BOCW.R1Shadowhunter_ready_start", t = 0 },
-            { s = "ARC9_BOCW.R1Shadowhunter_ready_load", t = 0.4 },
-            { s = "ARC9_BOCW.R1Shadowhunter_ready_end", t = 0.8 },
+            { s = "ARC9_BOCW.NailGun_ready", t = 0 },
         },
     },
     ["bash"] = {
@@ -580,28 +585,28 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload",
-        Time = 2.58,
+        Time = 2.6,
         NoMagSwap = true,
         MinProgress = 0.65,
         EventTable = {
-            { s = "ARC9_BOCW.R1Shadowhunter_reload_start", t = 0 },
-            { s = "ARC9_BOCW.R1Shadowhunter_reload_pullstring", t = 0.4 },
-            { s = "ARC9_BOCW.R1Shadowhunter_reload_loadstart", t = 1.1 },
-            { s = "ARC9_BOCW.R1Shadowhunter_reload_load", t = 1.5 },
-            { s = "ARC9_BOCW.R1Shadowhunter_reload_end", t = 1.9 },
+            { s = "ARC9_BOCW.NailGun_reload_start", t = 0 },
+            { s = "ARC9_BOCW.NailGun_reload_magout", t = 0.2 },
+            { s = "ARC9_BOCW.NailGun_reload_maginstart", t = 1.1 },
+            { s = "ARC9_BOCW.NailGun_reload_magin", t = 1.3 },
+            { s = "ARC9_BOCW.NailGun_reload_end", t = 2 },
         },
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        Time = 2.58,
-        NoMagSwap = true,
+        Time = 2.6,
+        MagSwapTime = 0.4,
         MinProgress = 0.65,
         EventTable = {
-            { s = "ARC9_BOCW.R1Shadowhunter_reload_start", t = 0 },
-            { s = "ARC9_BOCW.R1Shadowhunter_reload_pullstring", t = 0.4 },
-            { s = "ARC9_BOCW.R1Shadowhunter_reload_loadstart", t = 1.1 },
-            { s = "ARC9_BOCW.R1Shadowhunter_reload_load", t = 1.5 },
-            { s = "ARC9_BOCW.R1Shadowhunter_reload_end", t = 1.9 },
+            { s = "ARC9_BOCW.NailGun_reload_start", t = 0 },
+            { s = "ARC9_BOCW.NailGun_reload_magout", t = 0.2 },
+            { s = "ARC9_BOCW.NailGun_reload_maginstart", t = 1.1 },
+            { s = "ARC9_BOCW.NailGun_reload_magin", t = 1.3 },
+            { s = "ARC9_BOCW.NailGun_reload_end", t = 2 },
         },
     },
     ["enter_sprint"] = {
@@ -622,9 +627,9 @@ SWEP.Animations = {
     ["enter_inspect"] = {
         Source = "inspect",
         EventTable = {
-            { s = "ARC9_BOCW.R1Shadowhunter_inspect_part1", t = 0 },
-            { s = "ARC9_BOCW.R1Shadowhunter_inspect_part2", t = 2.2 },
-            { s = "ARC9_BOCW.R1Shadowhunter_inspect_part3", t = 4.9 },
+            { s = "ARC9_BOCW.NailGun_inspect_part1", t = 0 },
+            { s = "ARC9_BOCW.NailGun_inspect_part2", t = 2.5 },
+            { s = "ARC9_BOCW.NailGun_inspect_part3", t = 4.5 },
         },
     },
 }
