@@ -365,7 +365,7 @@ SWEP.BobSprintMult = 0.1
 -------------------------- VISUALS
 
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
-    "tag_bullet_animate"
+    "tag_clip_animate"
 }
 SWEP.CaseBones = {}
 -- Unlike BulletBones, these bones are determined by the missing bullet amount when reloading

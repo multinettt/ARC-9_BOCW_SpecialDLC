@@ -98,7 +98,7 @@ if SERVER then
         tgt:TakeDamageInfo(dmginfo)
 
         if IsValid(tgt) then
-            self:EmitSound("ARC9_BOCW.R1Shadowhunter_projectile_hit", 80, math.random(70, 90))
+            self:EmitSound("ARC9_BOCW.Shared_Melee_stab", 80, math.random(70, 90))
         else
             self:EmitSound("ARC9_BOCW.R1Shadowhunter_projectile_hitworld", 80, 95, 0.5)
         end

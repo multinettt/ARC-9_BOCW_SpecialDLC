@@ -236,13 +236,6 @@ sound.Add({
     volume = 1.0,
     sound = "weapons/arc9/bocw_ballisticknife/ballisticknife_projectile_hitworld.wav"
 })
-
-sound.Add({
-    name = "ARC9_BOCW.BallisticKnife_projectile_hit",
-    channel = CHAN_AUTO,
-    volume = 1.0,
-    sound = {"weapons/arc9/bocw_ballisticknife/ballisticknife_projectile_hit1.wav","weapons/arc9/bocw_ballisticknife/ballisticknife_projectile_hit2.wav"}
-})
 --[[
 ooooo      ooo            o8o  oooo       .oooooo.                            
 `888b.     `8'            `"'  `888      d8P'  `Y8b                           

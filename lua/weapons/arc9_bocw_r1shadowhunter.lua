@@ -376,7 +376,7 @@ SWEP.CaseBGs = {}
 SWEP.StripperClipBGs = {}
 
 SWEP.HideBones = {
-    "tag_clip_reload_animate"
+    "tag_arrow_animate"
 } -- bones to hide in third person and customize menu. {"list", "of", "bones"}
 SWEP.ReloadHideBoneTables = {
 }
@@ -439,7 +439,7 @@ SWEP.CustomizePos = Vector(7, 38, 3)
 SWEP.CustomizeRotateAnchor = Vector(7, 0, -4)
 
 SWEP.CustomizeSnapshotFOV = 70
-SWEP.CustomizeSnapshotPos = Vector(9, 5, -3)
+SWEP.CustomizeSnapshotPos = Vector(4, 10, 0)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -558,6 +558,18 @@ SWEP.Animations = {
         Source = "ads_out",
         Time = 1,
     },
+    ["enter_sights_empty"] = {
+        Source = "ads_in_empty",
+        Time = 1,
+    },
+    ["idle_sights_empty"] = {
+        Source = "idle_empty",
+        Time = 1,
+    },
+    ["exit_sights_empty"] = {
+        Source = "ads_out_empty",
+        Time = 1,
+    },
     ["draw"] = {
         Source = "draw",
     },
@@ -574,6 +586,9 @@ SWEP.Animations = {
     },
     ["bash"] = {
         Source = "melee",
+    },
+    ["bash_empty"] = {
+        Source = "melee_empty",
     },
     ["fire"] = {
         Source = {"fire"},
@@ -619,8 +634,31 @@ SWEP.Animations = {
         Time = 0.4,
         NoStatAffectors = true
     },
+    ["enter_sprint_empty"] = {
+        Source = "supersprint_in_empty",
+        Time = 0.75,
+        NoStatAffectors = true
+    },
+    ["idle_sprint_empty"] = {
+        Source = "sprint_loop_empty",
+        Time = 2,
+        NoStatAffectors = true
+    },
+    ["exit_sprint_empty"] = {
+        Source = "sprint_out_empty",
+        Time = 0.4,
+        NoStatAffectors = true
+    },
     ["enter_inspect"] = {
         Source = "inspect",
+        EventTable = {
+            { s = "ARC9_BOCW.R1Shadowhunter_inspect_part1", t = 0 },
+            { s = "ARC9_BOCW.R1Shadowhunter_inspect_part2", t = 2.2 },
+            { s = "ARC9_BOCW.R1Shadowhunter_inspect_part3", t = 4.9 },
+        },
+    },
+    ["enter_inspect_empty"] = {
+        Source = "inspect_empty",
         EventTable = {
             { s = "ARC9_BOCW.R1Shadowhunter_inspect_part1", t = 0 },
             { s = "ARC9_BOCW.R1Shadowhunter_inspect_part2", t = 2.2 },
