@@ -235,7 +235,7 @@ SWEP.NPCWeight = 50
 SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
 SWEP.Sway = 1 -- How much the gun sways.
 SWEP.SwayMultHipFire = 0 -- How much the gun sways.
-SWEP.SwayMultSights = 0.2
+SWEP.SwayMultSights = 0
 
 SWEP.HoldBreathTime = 5 -- time that you can hold breath for
 SWEP.RestoreBreathTime = 4
@@ -284,7 +284,7 @@ SWEP.NPCWeight = 100 -- How likely it is for an NPC to get this weapon as oppose
 
 -------------------------- SOUNDS
 
-SWEP.ShootVolume = 125
+SWEP.ShootVolume = 50
 SWEP.ShootVolumeActual = 1
 SWEP.ShootPitch = 100
 SWEP.ShootPitchVariation = 0.05
@@ -304,7 +304,7 @@ SWEP.FirstDistantShootSoundSilenced = nil       -- First distant fire silenced
 
 SWEP.Silencer = false -- Silencer installed or not?
 
-SWEP.DryFireSound = "ARC9_BOCW.Shared_DryFire_Sniper"
+SWEP.DryFireSound = "ARC9_BOCW.Shared_DryFire_SMG"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 SWEP.ToggleAttSound = "items/flashlight1.wav"
@@ -600,9 +600,9 @@ SWEP.Animations = {
         MinProgress = 0.65,
         EventTable = {
             { s = "ARC9_BOCW.R1Shadowhunter_reload_start", t = 0 },
-            { s = "ARC9_BOCW.R1Shadowhunter_reload_pullstring", t = 0.4 },
-            { s = "ARC9_BOCW.R1Shadowhunter_reload_loadstart", t = 1.1 },
-            { s = "ARC9_BOCW.R1Shadowhunter_reload_load", t = 1.5 },
+            { s = "ARC9_BOCW.R1Shadowhunter_reload_pullstring", t = 0.3 },
+            { s = "ARC9_BOCW.R1Shadowhunter_reload_loadstart", t = 1.3 },
+            { s = "ARC9_BOCW.R1Shadowhunter_reload_load", t = 1.6 },
             { s = "ARC9_BOCW.R1Shadowhunter_reload_end", t = 1.9 },
         },
     },
@@ -613,9 +613,9 @@ SWEP.Animations = {
         MinProgress = 0.65,
         EventTable = {
             { s = "ARC9_BOCW.R1Shadowhunter_reload_start", t = 0 },
-            { s = "ARC9_BOCW.R1Shadowhunter_reload_pullstring", t = 0.4 },
-            { s = "ARC9_BOCW.R1Shadowhunter_reload_loadstart", t = 1.1 },
-            { s = "ARC9_BOCW.R1Shadowhunter_reload_load", t = 1.5 },
+            { s = "ARC9_BOCW.R1Shadowhunter_reload_pullstring", t = 0.3 },
+            { s = "ARC9_BOCW.R1Shadowhunter_reload_loadstart", t = 1.3 },
+            { s = "ARC9_BOCW.R1Shadowhunter_reload_load", t = 1.6 },
             { s = "ARC9_BOCW.R1Shadowhunter_reload_end", t = 1.9 },
         },
     },

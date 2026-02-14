@@ -284,7 +284,7 @@ SWEP.NPCWeight = 100 -- How likely it is for an NPC to get this weapon as oppose
 
 -------------------------- SOUNDS
 
-SWEP.ShootVolume = 125
+SWEP.ShootVolume = 75
 SWEP.ShootVolumeActual = 1
 SWEP.ShootPitch = 100
 SWEP.ShootPitchVariation = 0.05
@@ -304,7 +304,7 @@ SWEP.FirstDistantShootSoundSilenced = nil       -- First distant fire silenced
 
 SWEP.Silencer = false -- Silencer installed or not?
 
-SWEP.DryFireSound = "ARC9_BOCW.Shared_DryFire_Sniper"
+SWEP.DryFireSound = ""
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 SWEP.ToggleAttSound = "items/flashlight1.wav"

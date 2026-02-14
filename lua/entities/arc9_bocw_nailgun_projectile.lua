@@ -35,7 +35,7 @@ if SERVER then
             phys:SetMass(10) -- avoid collision damage
         end
 
-        --util.SpriteTrail(self, 0, Color(255, 255, 255), false, 3, 1, 0.15, 2, "trails/smoke.vmt")
+        util.SpriteTrail(self, 0, Color(255, 255, 255), false, 3, 1, 0.15, 2, "trails/smoke.vmt")
         SafeRemoveEntityDelayed(self, 60)
         self:SetPhysicsAttacker(self:GetOwner(), 10)
     end
