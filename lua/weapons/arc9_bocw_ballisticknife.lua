@@ -29,12 +29,12 @@ SWEP.Base = "arc9_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Black Ops Cold War"
-SWEP.SubCategory = "Special"
+SWEP.SubCategory = "9Special"
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "Ballistic Knife"
 SWEP.TrueName = "Ballistic Knife"
-SWEP.Class = "Special"
+SWEP.Class = "9Special"
 SWEP.Trivia = {
     Manufacturer = "Unknown",
     Calibre = "Knife",
