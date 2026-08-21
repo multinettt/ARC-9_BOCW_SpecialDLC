@@ -587,6 +587,7 @@ SWEP.Animations = {
         Source = "reload",
         Time = 2.6,
         NoMagSwap = true,
+        FireASAP = 1,
         MinProgress = 0.65,
         EventTable = {
             { s = "ARC9_BOCW.NailGun_reload_start", t = 0 },
@@ -600,6 +601,7 @@ SWEP.Animations = {
         Source = "reload_empty",
         Time = 2.6,
         MagSwapTime = 0.4,
+        FireASAP = 1,
         MinProgress = 0.65,
         EventTable = {
             { s = "ARC9_BOCW.NailGun_reload_start", t = 0 },

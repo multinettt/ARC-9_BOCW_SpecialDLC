@@ -602,6 +602,7 @@ SWEP.Animations = {
         Source = "reload",
         Time = 1.34,
         NoMagSwap = true,
+        FireASAP = 1,
         MinProgress = 0.7,
         EventTable = {
             { s = "ARC9_BOCW.BallisticKnife_reload", t = 0.7 },

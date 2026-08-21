@@ -597,6 +597,7 @@ SWEP.Animations = {
         Source = "reload",
         Time = 2.58,
         NoMagSwap = true,
+        FireASAP = 1,
         MinProgress = 0.65,
         EventTable = {
             { s = "ARC9_BOCW.R1Shadowhunter_reload_start", t = 0 },
@@ -610,6 +611,7 @@ SWEP.Animations = {
         Source = "reload_empty",
         Time = 2.58,
         NoMagSwap = true,
+        FireASAP = 1,
         MinProgress = 0.65,
         EventTable = {
             { s = "ARC9_BOCW.R1Shadowhunter_reload_start", t = 0 },
